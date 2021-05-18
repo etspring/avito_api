@@ -25,6 +25,10 @@ module AvitoApi
       get_data(url, params)
     end
 
+    def slocations(params = {})
+      get_data("/#{AvitoApi.configuration.endpoints[__method__]}/#{__method__}", params)
+    end    
+
     private
 
     def base_uri

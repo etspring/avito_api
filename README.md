@@ -67,6 +67,10 @@ client = AvitoApi::Client.new
 ```ruby
 client.categories
 ```
+Справочник населенных пунктов:
+```ruby
+client.slocations({limit: 10, query: 'Вла'})
+```
 
 Список предложений ( кратких )
 ```ruby
@@ -104,7 +108,6 @@ client.items.map { |item| item.full }
 Собственно в планах следующее:
 
 1. Добавить обработку ошибок
-2. Добавить работу с suggests/search
 
 ## Contributing
 
