@@ -31,7 +31,7 @@ module AvitoApi
 
     def initialize
       @api_url = 'https://www.avito.ru'
-      @endpoints = { categories: '5', items: '10', phone: '1', full: '16' }
+      @endpoints = { categories: '5', items: '10', phone: '1', full: '16', slocations: '1' }
     end
   end
 end
